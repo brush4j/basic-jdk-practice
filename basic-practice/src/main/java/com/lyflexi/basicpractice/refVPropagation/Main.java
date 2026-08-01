@@ -1,4 +1,4 @@
-package com.lyflexi.basicpractice.valuePropagation;
+package com.lyflexi.basicpractice.refVPropagation;
 
 /**
  * @Author: ly
@@ -48,9 +48,9 @@ public class Main {
     /**
      * 值传递：引用副本也是值
      *
-     * 传入10，相当于传入了引用副本为10，内部改为20 ，则外部也改为20
+     * 传入10，相当于传入了引用副本为10，修改堆中值20 ，则外部也改为20（外部指向同一堆）
      *
-     * 但最终新创建的ObjectReference不属于同一引用，因此30不影响原来的引用
+     * 但最终新创建的ObjectReference是新的堆空间，因此30不影响原来引用指向的旧空间
      * @param reference
      */
     public static void testReference(ObjectReference reference) {

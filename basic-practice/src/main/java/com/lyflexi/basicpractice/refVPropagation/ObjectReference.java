@@ -1,4 +1,4 @@
-package com.lyflexi.basicpractice.valuePropagation;
+package com.lyflexi.basicpractice.refVPropagation;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
